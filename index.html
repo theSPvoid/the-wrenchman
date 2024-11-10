@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Raghunath Auto Workshop</title>
+    <meta name="description" content="Welcome to Raghunath Auto Workshop. We offer quality services for your two-wheelers.">
+    <meta name="keywords" content="Auto Workshop, Raghunath, Bhubaneswar, Services, Mechanics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html"><img src="images/ximb_logo.png" alt="XIMB Logo" id="nav-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="financial-analysis.html">Financial Analysis</a></li>
+                <li><a href="team.html">Meet the Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-text" data-aos="fade-down">
+            <h1>Financial Analysis</h1>
+            <h2>of</h2>
+            <h1 class="workshop-title">Raghunath Auto Workshop</h1>
+        </div>
+    </header>
+
+    <!-- Main Image -->
+    <img src="images/shop_main.jpg" alt="Front view of Raghunath Auto Workshop" id="main-image" data-aos="fade-up">
+
+    <!-- Carousel (Moved before Map Image) -->
+    <div class="carousel-container" data-aos="fade-up">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/shop1.jpg" alt="Inside view of the workshop">
+            </div>
+            <div class="carousel-item">
+                <img src="images/shop2.jpg" alt="Mechanics at work">
+            </div>
+            <div class="carousel-item">
+                <img src="images/shop3.jpg" alt="Customers at the shop">
+            </div>
+            <div class="carousel-item">
+                <img src="images/shop4.jpg" alt="Workshop equipment">
+            </div>
+            <div class="carousel-item">
+                <img src="images/shop5.jpg" alt="Shop entrance">
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <div class="carousel-nav">
+            <span class="prev" onclick="prevSlide()">&#10094;</span>
+            <span class="next" onclick="nextSlide()">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()" tabindex="0">
+        <img id="lightbox-img" src="" alt="Expanded view">
+    </div>
+
+    <!-- Map Image -->
+    <img src="images/shop_map.jpg" alt="Map location of Raghunath Auto Workshop" id="map-image" data-aos="fade-up">
+
+    <!-- Address Section -->
+    <section class="address-section" data-aos="fade-right">
+        <h2>Address</h2>
+        <p>Damana School Rd, Damana, Chandrasekharpur, Bhubaneswar, Odisha, 751016</p>
+        <a href="https://maps.app.goo.gl/zQZ88D9pZwtmMPWx5" target="_blank" class="btn">View in Maps</a>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="owner-section" data-aos="fade-left">
+        <h2>Owner</h2>
+        <div class="owner-info">
+            <img src="images/owner.jpg" alt="Photo of the Owner">
+            <h3>Mr. Raghunath</h3>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" data-aos="zoom-in">
+        <h2>Services We Offer</h2>
+        <ul class="services-list">
+            <li>Oil Change</li>
+            <li>Brake Inspection</li>
+            <li>Tyre Pressure Check</li>
+            <li>Engine Replacement</li>
+            <li>Engine Tuning</li>
+            <li>Lubricating</li>
+            <li>Air Filter Replacement</li>
+        </ul>
+    </section>
+
+    <!-- Book an Appointment Button -->
+    <div class="appointment-button" data-aos="fade-up">
+        <a href="contact.html" class="btn">Book an Appointment</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 XIMB Bhubaneswar</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
+</body>
+</html>
