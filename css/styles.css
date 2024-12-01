@@ -158,36 +158,6 @@ header,
     background: #e6c200;
 }
 
-/* Owner Section */
-.owner-section {
-    background: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.owner-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.owner-info {
-    display: inline-block;
-    text-align: center;
-}
-
-.owner-info img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.owner-info h3 {
-    font-size: 1.5em;
-    margin: 0;
-}
-
 /* Services Section */
 .services-section {
     background: #fff;
@@ -471,6 +441,85 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
+}
+
+/* Owner Section */
+.owner-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.owner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.owner-photo {
+    text-align: center;
+    margin: 20px;
+}
+
+.owner-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.owner-photo h3 {
+    margin-top: 15px;
+    font-size: 1.8em;
+    color: #1e3c72;
+}
+
+.owner-description {
+    max-width: 600px;
+    margin: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.owner-description p {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .owner-container {
+        flex-direction: column;
+    }
+
+    .owner-photo, .owner-description {
+        margin: 20px 0;
+    }
+}
+
+/* Interview Section */
+.interview-section {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.interview-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
 /* Responsive Styles */
